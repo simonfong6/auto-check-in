@@ -1,4 +1,4 @@
-#!usr/local/bin/node
+#!/usr/local/bin/node
 /*
 main.js
 Starting code from https://webdriver.io/docs/setuptypes.html from the
