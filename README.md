@@ -283,3 +283,21 @@ To make it run at 8:00 PM instead, we do
 Cronjobs only run when the computer is awake, so you'll need to make sure your computer is awake when the script is supposed to run.
 
 9. Making sure your mac is going to be awake.
+We'll be using the `Schedule` feature of `Energy Saver` on the Mac.
+```
+System Preferences > Energy Saver > Schedule
+```
+![](images/system-preferences.png)
+
+Click on `Schedule...` on the lower right.
+![](images/energy-saver.png)
+
+
+Check `Start up or wake`, select your time. In my case, we want our script to run everyday at 8:00 AM, so select that start up time.
+![](images/schedule-wakeup.png)
+
+# Note
+No guarantees that this will work, please test on your own as well.
+
+## Testing methods
+Schedule the crontab to run in two minutes to see if its being run properly, if it is you'll see a browser popup when the time hits.
