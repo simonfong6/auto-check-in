@@ -263,7 +263,7 @@ Then type `esc` and `:wq` and `enter` to save and quit.
 
 Example
 ```
-0 8 * * * /Users/simon/Projects/tools/auto-check-in/main.js "Run everyday at 8:00 AM"
+0 8 * * * cd /Users/simon/Projects/tools/auto-check-in/ && ./main.js "Run everyday at 8:00 AM"
 ```
 
 Your computer might warn you with something like this, just click `OK`.
