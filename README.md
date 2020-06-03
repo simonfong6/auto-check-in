@@ -270,7 +270,7 @@ Your computer might warn you with something like this, just click `OK`.
 ![](images/crontab-save-warning.png)
 
 ## Crontab Formatting
-Remember that `crontab` uses 24 hour clock so this means run on the 8th hour at the 0th minute of each day. (8:00 PM Everyday)
+Remember that `crontab` uses 24 hour clock so this means run on the 8th hour at the 0th minute of each day. (8:00 AM Everyday)
 ```
 0 8 * * *
 ```
