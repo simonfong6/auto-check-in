@@ -7,7 +7,7 @@ Automated check in to a website. Intended to work on a Mac.
 https://webdriver.io/docs/setuptypes.html
 
 ## Crontab
-
+https://superuser.com/questions/126907/how-can-i-get-a-script-to-run-every-day-on-mac-os-x
 
 
 # Setup
