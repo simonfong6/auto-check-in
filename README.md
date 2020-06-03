@@ -199,7 +199,7 @@ node main.js
 ```
 A browser window should popup and try to login. The login fails here because we gave it dummy credentials.
 
-![](node-main.gif)
+![](images/node-main.gif)
 
 7. Make it executable. (Only required if we need to execute automatically.)
 ```
@@ -265,6 +265,10 @@ Example
 ```
 0 8 * * * /Users/simon/Projects/tools/auto-check-in/main.js "Run everyday at 8:00 AM"
 ```
+
+Your computer might warn you with something like this, just click `OK`.
+![](images/crontab-save-warning.png)
+
 ## Crontab Formatting
 Remember that `crontab` uses 24 hour clock so this means run on the 8th hour at the 0th minute of each day. (8:00 PM Everyday)
 ```
