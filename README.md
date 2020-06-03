@@ -217,3 +217,52 @@ chmod -x main.js
 ```
 
 8. Running it automatically. This will require using `crontab`.
+I can't figure out a way to use VS Code to edit the `crontab`, so we'll be using VIM.
+
+```
+EDITOR="vim"
+```
+
+Edit the `crontab`.
+```
+crontab -e
+```
+
+This should open up a file like this.
+```bash
+20 9 * * * /Users/simon/Projects/delete-me/see-browser/run.sh "Run everyday at 9:20 AM"
+```
+
+Yours will likely be empty.
+
+We need the path of the the file to execute (`realpath` works on mac, but on linux you can use `pwd` and append the file name.):
+```
+realpath main.js
+```
+Output
+```
+simon@Simons-MBP auto-check-in % realpath main.js 
+/Users/simon/Projects/tools/auto-check-in/main.js
+```
+
+## Vim Commands
+- `esc` - Reset to command mode.
+- `i` - in command mode, lets you insert text or type
+- `:wq` - in command mode, save and quit
+- `:q` - in command mode, quit
+
+Press `i` to write a new crontab
+Let's make it run everyday at 8 AM, follow this format: https://crontab.guru/every-day-8am
+```
+0 8 * * * /path/to/script "Note"
+```
+Then type `esc` and `:wq` and `enter` to save and quit.
+
+Example
+```
+0 8 * * * /Users/simon/Projects/tools/auto-check-in/main.js "Run everyday at 8:00 AM"
+```
+## Note
+Cronjobs only run when the computer is awake, so you'll need to make sure your computer is awake when the script is supposed to run.
+
+9. Making sure your mac is going to be awake.
