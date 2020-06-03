@@ -17,6 +17,8 @@ cd auto-check-in
 npm init -y
 ```
 This should something like the following:
+
+`package.json`
 ```json
 {
   "name": "auto-check-in",
