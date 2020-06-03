@@ -293,7 +293,7 @@ Click on `Schedule...` on the lower right.
 ![](images/energy-saver.png)
 
 
-Check `Start up or wake`, select your time. In my case, we want our script to run everyday at 8:00 AM, so select that start up time.
+Check `Start up or wake`, select your time. In my case, we want our script to run everyday at 8:00 AM, so select that start up time. In order for this to work, it seems that you have your Mac must be asleep with the lid open, otherwise, the cronjob can't run. I am unsure about this and can be changed if I find a fix.
 ![](images/schedule-wakeup.png)
 
 # Note
