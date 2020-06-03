@@ -1,5 +1,14 @@
 # auto-check-in
-Automated check in to a website.
+Automated check in to a website. Intended to work on a Mac.
+
+# Resources
+
+## Webdriverio
+https://webdriver.io/docs/setuptypes.html
+
+## Crontab
+
+
 
 # Setup
 
@@ -166,7 +175,7 @@ remote({
       log('9:30 AM Button Not Found');
     }
 
-     // Click the 5:30 PM Check In button if it exists.
+    // Click the 5:30 PM Check In button if it exists.
     const FiveThirtyCheckInButton = browser.$('button*=05:30');
     if (FiveThirtyCheckInButton.isExisting()) {
       FiveThirtyCheckInButton.click();
@@ -191,3 +200,20 @@ node main.js
 A browser window should popup and try to login. The login fails here because we gave it dummy credentials.
 
 ![](node-main.gif)
+
+7. Make it executable. (Only required if we need to execute automatically.)
+```
+chmod +x main.js
+```
+This uses the shebang at the top to execute the file. `#!/usr/local/bin/node` so that we can run it like so:
+
+```
+./main.js
+```
+
+If you want to undo it, you can run.
+```
+chmod -x main.js
+```
+
+8. Running it automatically. This will require using `crontab`.

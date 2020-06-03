@@ -113,7 +113,7 @@ remote({
       log('9:30 AM Button Not Found');
     }
 
-     // Click the 5:30 PM Check In button if it exists.
+    // Click the 5:30 PM Check In button if it exists.
     const FiveThirtyCheckInButton = browser.$('button*=05:30');
     if (FiveThirtyCheckInButton.isExisting()) {
       FiveThirtyCheckInButton.click();
