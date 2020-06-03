@@ -265,6 +265,16 @@ Example
 ```
 0 8 * * * /Users/simon/Projects/tools/auto-check-in/main.js "Run everyday at 8:00 AM"
 ```
+## Crontab Formatting
+Remember that `crontab` uses 24 hour clock so this means run on the 8th hour at the 0th minute of each day. (8:00 PM Everyday)
+```
+0 8 * * *
+```
+To make it run at 8:00 PM instead, we do
+```
+0 20 * * *
+```
+
 ## Note
 Cronjobs only run when the computer is awake, so you'll need to make sure your computer is awake when the script is supposed to run.
 
