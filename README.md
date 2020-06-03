@@ -24,7 +24,7 @@ This should something like the following:
   "name": "auto-check-in",
   "version": "1.0.0",
   "description": "Automated check in to a website",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -41,4 +41,8 @@ This should something like the following:
   "homepage": "https://github.com/simonfong6/auto-check-in#readme"
 }
 
+```
+4. Install webdriver for browser interaction.
+```
+npm install webdriverio @wdio/sync
 ```

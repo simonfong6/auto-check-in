@@ -1,8 +1,8 @@
 {
   "name": "auto-check-in",
   "version": "1.0.0",
-  "description": "Automated check in to a website",
-  "main": "index.js",
+  "description": "Automated check in to a website.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/simonfong6/auto-check-in/issues"
   },
-  "homepage": "https://github.com/simonfong6/auto-check-in#readme"
+  "homepage": "https://github.com/simonfong6/auto-check-in#readme",
+  "dependencies": {
+    "@wdio/sync": "^6.1.14",
+    "webdriverio": "^6.1.16"
+  }
 }
