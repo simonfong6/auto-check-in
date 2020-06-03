@@ -219,6 +219,18 @@ chmod -x main.js
 8. Running it automatically. This will require using `crontab`.
 I can't figure out a way to use VS Code to edit the `crontab`, so we'll be using VIM.
 
+## Aside
+We need the path of the the file to execute (`realpath` works on mac, but on linux you can use `pwd` and append the file name.):
+```
+realpath main.js
+```
+Output
+```
+simon@Simons-MBP auto-check-in % realpath main.js 
+/Users/simon/Projects/tools/auto-check-in/main.js
+```
+
+## Back to crontab
 ```
 EDITOR="vim"
 ```
@@ -235,15 +247,6 @@ This should open up a file like this.
 
 Yours will likely be empty.
 
-We need the path of the the file to execute (`realpath` works on mac, but on linux you can use `pwd` and append the file name.):
-```
-realpath main.js
-```
-Output
-```
-simon@Simons-MBP auto-check-in % realpath main.js 
-/Users/simon/Projects/tools/auto-check-in/main.js
-```
 
 ## Vim Commands
 - `esc` - Reset to command mode.
