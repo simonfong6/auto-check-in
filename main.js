@@ -108,6 +108,8 @@ remote({
     // Click the 9:30 AM Check In button if it exists.
     if (NineThirtyCheckInButton.isExisting()) {
       NineThirtyCheckInButton.click();
+      const text = NineThirtyCheckInButton.getText();
+      log(`9:30 AM Text: '${text}'`);
       log('9:30 AM Button Clicked');
     } else {
       log('9:30 AM Button Not Found');
@@ -117,6 +119,8 @@ remote({
     const FiveThirtyCheckInButton = browser.$('button*=05:30');
     if (FiveThirtyCheckInButton.isExisting()) {
       FiveThirtyCheckInButton.click();
+      const text = FiveThirtyCheckInButton.getText();
+      log(`5:30 PM Text: '${text}'`);
       log('5:30 PM Button Clicked');
     } else {
       log('5:30 PM Button Not Found');
